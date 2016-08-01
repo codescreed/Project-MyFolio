@@ -1,0 +1,75 @@
+/*Header HeaderHeader HeaderHeader HeaderHeader HeaderHeader HeaderHeader HeaderHeader HeaderHeader HeaderHeader Header*/
+
+header {	width: 100%; height:100px; background-color:#43B2B7; display: block;	box-shadow: 10px 10px 50px #585858, 5px 5px 30px #2E2E2E inset;	border-radius: 6px;	
+}
+header a{	text-decoration: none;	
+}
+header a h1{	color: #094144;	float: left;	font-size: 300%;	font-family:  'Bungee Shade', cursive;	margin-top: -15px;	margin-left: 20px;
+}
+header ul{		display: inline;	
+}
+header ul li{	display: inline;	float: right;	margin-top: 30px;
+	
+}
+header ul li a{	font-size: 110%;	text-decoration: none;	font-family: 'Kumar One Outline', cursive;	font-weight: bold;	color: #027D88;	padding-right: 10px;	padding-left: 10px;
+	margin-right: 40px;	margin-left: 20px;	display: block;	
+	}
+header ul li a:hover{	border: 3PX #00FF00;	border-radius: 10px;	font-size: 112%;	text-shadow: 5px rgba(0,0,0,0.50);	text-decoration: underline ;	text-decoration-color: #FF8000;
+}
+/*Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body */
+body{
+	/*background-color:#ffffff ;*/
+	background-image: url(back11.jpg);
+	background-size: 150%;
+	background-repeat: repeat;
+	overflow: auto;
+
+}
+
+/*Sections Sections Sections Sections Sections Sections Sections */
+.container1 , .container2 , .container3 {	width: 1000px;	height: 300px;	display: block;	margin: 70px 292px 10px 292px;
+}
+.container1 p, .container2 p , .container3 p{ 	margin: 10px 0px; 	line-height: 30px; 	font-family: 'Pacifico', cursive; 	text-align: center; color: #000000;
+}
+.content1 h2 , .content2 h2 , .container3 h2{	font-size: 150%;	text-align: center; font-family: 'Creepster', cursive; color: #A4A4A4;
+}
+
+/* Container1 Container1 Container1 Container1 Container1 Container1 Container1 Container1 Container1 */
+.image1{
+	width: 300px;	height: 290px;	float: left;	display: block;
+	
+}
+
+.image1 img{	width: 100%;	height: 100%;	margin-top: 5px;	margin-left: 5px;	border-radius: 10px;
+}
+.content1 {
+	width: 650px;	height: 290px;	float: right;	display: block;
+}
+
+.container1 p {	width: 600px; 	font-size: 120%; 	margin-left: 20px;
+ 	
+}
+
+/*/* Container2  Container2 Container2 Container2 Container2 Container2 Container2 Container2 Container2 Container2*/
+.image2{	width: 300px;	height: 290px;	display: block;	float: right;	margin-right: 100px;
+}
+
+.image2 img{	width:130%;	height:95%;	margin-top: 5px;	margin-left: 5px;	border-radius: 10px;
+	
+}
+.content2 {	width: 600px;	height: 310px;	float: left;	display: block;
+}
+.container2 p{	width: 550px; 	font-size: 120%; 	margin-left: 15px; }
+.container2 p a{	text-decoration: none;	color: #DF013A;
+}
+
+/*container3  container3  container3  container3  container3  container3  container3  */
+
+.image3{	width: 300px;	height: 290px;	display: block;	float: left;	margin-right: 100px;
+}
+
+.image3 img{	width:130%;	height:100%;	margin-top: 35px;	margin-left: 5px;	border-radius: 10px;
+}
+.content3 {	width: 600px;	height: 310px;	float: right;	display: block;
+}
+.container3 p{	width: 550px; 	font-size: 120%; 	margin-left: 15px; }
