@@ -1,0 +1,67 @@
+/*Header HeaderHeader HeaderHeader HeaderHeader HeaderHeader HeaderHeader HeaderHeader HeaderHeader HeaderHeader Header*/
+
+header {	/*min-height:60px;*/ display: block; /*box-shadow: 0px  2px #585858;*//* 5px 5px 30px #2E2E2E inset;*/	border-radius: 6px;	
+margin-top: 5px; border-bottom: 5px;}
+.nav-head{/*background-image: url(back12.jpg);background-size: 150%;background-repeat: repeat;*/
+background-color: #37474F;}
+.logoline { 	font-size: 180%;font-family:  'Bungee Shade', cursive; text-align: center;}
+.logoline a{color: #FFFFFF;}
+.logoline a:hover{	text-decoration: none;	 
+}
+.selected{text-decoration: underline;}		
+.sm-men{margin:auto; }
+.sm-men ul li a{margin:auto;font-family: 'Bungee Inline', cursive; color:#FFFFFF; font-size: 80%;}
+.men-item{margin-right: 10px;}
+.men-list{font-size: 150%; margin-top: 15px; color:#ffffff ;}
+
+.dropdown-menu{margin-top: 15px;background-color:#37474F;min-width: 767px;}
+.dropdown-menu > .active > a{background-color: #000000;}
+.dropdown-menu > .active > a:hover{background-color: #000000; }
+.dropdown-menu > li > a:hover{background-color: #000000; color: #FFFFFF;}
+.men-item{size: 100%;}
+.med-men{margin-top: 5px;
+}
+.med-men li{	text-decoration: none;	display: inline; text-align: center; margin-top: 12px;}
+.med-men li a{font-family: 'Bungee Inline', cursive;font-size: 80%; color: #ffffff;}
+
+.med-men li a:hover{text-decoration: none;background-color: #37474F;}
+/*Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body */
+body{
+	/*background-color:#ffffff ;*/
+
+ 	overflow-x: hidden;
+
+	
+	height: auto;
+}
+
+/*
+  Icons Icons Icons Icons Icons Icons Icons Icons Icons Icons Icons Icons Icons Icons Icons font-family: 'Ribeye', cursive;
+font-family: 'Lustria', serif;*/
+img{max-height: 300px;
+margin: auto;
+box-shadow: 15px 15px 25px #000000;
+
+}
+.profile{ border-top: double;border-color: #ffffff;}
+.row{margin-left: 0px;margin-right: 0px;}
+.mohit{margin-top: 160px; margin-bottom: 30px; border-spacing: 15px;}
+.profile h2,.profile h3{margin: auto;text-align: center; color: #424242;}
+.profile h2{font-family: 'Ribeye', cursive; margin-bottom: 6px; margin-top: 10px;}
+.profile h3{font-family: 'Lustria', serif; margin-top: 5px;border-spacing: 5px;}
+.icon-color{color:#424242;font-weight: bolder; }
+.social1{margin-top: 50px;margin-bottom: 30px;}
+
+ .social1 a img {
+ 	margin:auto;
+ 	height: 50px;
+ 	width: 50px;
+ 	display: block;
+ 	border-radius: 10px;
+ 	box-shadow: 5px 5px 25px #000000;
+ 	opacity:1;
+ }
+ .social1 a img:hover{
+
+opacity: 0.9;
+ }

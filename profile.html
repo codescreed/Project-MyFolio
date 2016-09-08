@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Profile</title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link href="/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="profilestyle.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Creepster|Kumar+One+Outline|Pacifico" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Aclonica|Lustria|Ribeye|Syncopate" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Bungee+Inline|Creepster|Kumar+One+Outline|Pacifico" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		
+		$('#123').click(function(){
+			if($('#321').is(":hidden")){
+				 $('#321').slideDown(500);
+			}
+			else{
+				$('#321').slideUp(500);
+			}
+		});
+		});
+
+
+				
+</script>
+</head>
+<body class="img-responsive">
+<header class="col-xs-12">
+	<div class="navbar nav-head navbar-fixed-top">
+		<div class="dropdown visible-xs col-xs-3 sm-men">
+		<a class="dropdown-toggle" data-toggle="dropdown">
+			<span class="men-list glyphicon glyphicon-th-list" id="123"></span>
+		</a>
+		<ul class="dropdown-menu " id="321">
+		<li><a href="index.html"><span class="men-item glyphicon glyphicon-home"></span> Home</a></li>
+		<li class="divider"></li>
+		<li ><a href="aboutme.html"><span class="men-item glyphicon glyphicon-user"></span> About Me</a></li>
+		<li class="divider"></li>
+		<li><a href="gallery.html"><span class="men-item glyphicon glyphicon-picture"></span>Photo gallery</a></li>
+		<li class="divider"></li>
+		<li ><a href="jsprograms.html"><span class="men-item glyphicon glyphicon glyphicon-edit"></span>JS Programs</a></li>
+		<li class="divider"></li>		
+		<li class="active"><a><span class="men-item glyphicon glyphicon-king"></span>Profile</a></li>
+		</ul>
+		</div>
+	<div class="col-md-3 col-md-offset-0 col-sm-8 col-sm-offset-2 col-xs-7 col-xs-offset-2 ">
+		<h1 class="logoline"><a href="index.html" >My Web</a></h1>
+	</div>
+	<div class="col-md-8 col-md-offset-1 col-sm-10 col-sm-offset-1 hidden-xs  ">
+	<ul class="col-xs-12 list-inline med-men nav nav-tabs">
+		<li class="col-xs-6 col-sm-3"><a href="aboutme.html"><span class="men-item glyphicon glyphicon-user"></span>About Me </a></li>
+		
+		<li class="col-xs-6 col-sm-3"><a href="gallery.html"><span class="men-item glyphicon glyphicon-picture"></span>Photo gallery</a></li>
+		<li class="col-xs-6 col-sm-3"><a href="jsprograms.html"><span class="men-item glyphicon glyphicon glyphicon-edit"></span>JS Programs</a></li>
+		<li class="col-xs-6 col-sm-3 active"><a><span class="men-item glyphicon glyphicon-king"></span>Profile</a></li>
+	</ul>
+	</div>
+
+	</div>
+	
+</header>
+<div class="row col-xs-12">
+	
+	<div class="profile col-md-8 col-md-offset-2 col-xs-12">
+		<div class="mohit col-xs-8 col-xs-offset-2 col-sm-12 col-sm-offset-0">
+		<img class="img-responsive img-rounded" src="profile.jpg" alt="profile picture" id="image1">
+		</div>	<!-- <img class="line img-responsive "src="line2.svg" alt="line" id="image2"> -->
+		<div class="col-xs-12 col-sm-12 col-sm-offset-0">
+		<h2>Mohit Pandey</h2>
+		<h3>Delhi, India</h3>
+		<h3>B.tech- Electronics and communication Engg.</h3>
+		<h3>Web Developer- Test Engineer </h3>
+		<h3>TechnoGeek - Photography - Foodie</h3>
+		<h3><span class="icon-color	glyphicon glyphicon-wrench"></span> - HTML 5 | CSS | CSS3 | JavaScript | Responsive framework - Bootstrap | Version control system -Git | CoreJava Concepts | Software Testing | Selenium</h3>
+		<h3><span class="icon-color glyphicon glyphicon-envelope"></span>  - mht.pdy@gmail.com </h3>
+		</div>
+		
+	</div>
+	
+</div>
+
+
+<div class="row col-xs-12">
+	<div class="social1 col-md-8 col-md-offset-2 col-xs-12">
+			<a href="https://www.facebook.com/mohitp3" target="_blank" class="col-xs-3"><img src="facebook.png" alt="facebook"></a>
+			<a href="https://plus.google.com/+MohitPandey3" target="_blank" class="col-xs-3"><img src="gplus.png" alt="googlePlus"></a>
+			<a href="https://www.linkedin.com/profile/preview?vpa=pub&locale=en_US" target="_blank" class="col-xs-3"><img src="linkedin.png" alt="linkedin"></a>
+			<a href="https://twitter.com/mohitp3" target="_blank" 	class="col-xs-3"><img src="twitter.png" alt="twitter"></a>
+	</div>
+			
+</div>
+
+<!-- <form>
+	<h1>Please drop your information below </h1>
+	<fieldset>
+		
+		<h2>Name  <input type="text" name="fname" placeholder="First Name"> <input type="text" name="lname" placeholder="Last Name"></h2>
+		<h2>Email ID - <input type="text" name="emailId" placeholder="abc@xmail.com"></h2>
+		<h2>Contact Number - <input type="Text" name="phone" placeholder="(XXX)-XXX XXXX"></h2>
+
+	</fieldset>
+</form> -->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/js/bootstrap.min.js"></script>
+	
+</body>
+</html>

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Programs</title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link href="/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="jsprogramsstyle.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Bungee+Inline|Creepster|Kumar+One+Outline|Pacifico" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		
+		$('#123').click(function(){
+			if($('#321').is(":hidden")){
+				 $('#321').slideDown(500);
+			}
+			else{
+				$('#321').slideUp(500);
+			}
+		});
+		});
+
+
+				
+</script>
+</head>
+
+<body>
+<header class="col-xs-12">
+	<div class="navbar nav-head navbar-fixed-top">
+		<div class="dropdown visible-xs col-xs-3 sm-men">
+		<a class="dropdown-toggle" data-toggle="dropdown">
+			<span class="men-list glyphicon glyphicon-th-list" id="123"></span>
+		</a>
+		<ul class="dropdown-menu " id="321">
+		<li><a href="index.html"><span class="men-item glyphicon glyphicon-home"></span> Home</a></li>
+		<li class="divider"></li>
+		<li><a href="aboutme.html"><span class="men-item glyphicon glyphicon-user"></span> About Me</a></li>
+		<li class="divider"></li>
+		<li><a href="gallery.html"><span class="men-item glyphicon glyphicon-picture"></span>Photo gallery</a></li>
+		<li class="divider"></li>
+		<li class="active"><a><span class="men-item glyphicon glyphicon glyphicon-edit"></span>JS Programs</a></li>
+		<li class="divider"></li>		
+		<li><a href="profile.html"><span class="men-item glyphicon glyphicon-king"></span>Profile</a></li>
+		</ul>
+		</div>
+	<div class="col-md-3 col-md-offset-0 col-sm-8 col-sm-offset-2 col-xs-7 col-xs-offset-2 ">
+		<h1 class="logoline"><a href="index.html" >My Web</a></h1>
+	</div>
+	<div class="col-md-8 col-md-offset-1 col-sm-10 col-sm-offset-1 hidden-xs  ">
+	<ul class="col-xs-12 list-inline med-men nav nav-tabs">
+		<li class="col-xs-6 col-sm-3"><a href="aboutme.html"><span class="men-item glyphicon glyphicon-user"></span>About Me </a></li>
+		
+		<li class="col-xs-6 col-sm-3"><a href="gallery.html"><span class="men-item glyphicon glyphicon-picture"></span>Photo gallery</a></li>
+		<li class="col-xs-6 col-sm-3 active"><a><span class="men-item glyphicon glyphicon glyphicon-edit"></span>JS Programs</a></li>
+		<li class="col-xs-6 col-sm-3"><a href="profile.html"><span class="men-item glyphicon glyphicon-king"></span>Profile</a></li>
+	</ul>
+	</div>
+
+	</div>
+	
+</header>
+
+	
+	<div class="row col-xs-12">
+		<div class="cal col-md-6 col-xs-12 well">
+		<h2 class="calcLabl">Calculator</h2>
+		<br/>
+		<form class="form-inline" id="calc-form" >
+			<div class="input-group col-md-4 col-xs-10 col-xs-offset-1 col-md-offset-0">
+				<span class="input-group-addon">First Number</span>
+				<input class="form-control" id="firstNum" type="text" placeholder="0">
+			</div>
+			<div class="form-group input-group col-md-4 col-xs-10 col-xs-offset-1 col-md-offset-0">
+				<span class="input-group-addon">Second Number</span>
+				<input class="form-control" id="secNum" type="text" placeholder="0">
+			</div>
+		</form>
+		
+			<h4 class="calResult col-md-6 col-md-offset-3"><span class="res-style" id="result"></span></h4>
+			<br/>
+			<div class="calcButn col-md-6 col-md-offset-3 col-xs-12">
+				<div class="btn-group">
+					<button class="btn btn-success" onclick="add()" name="addition">+</button>
+					<button class="btn btn-success" onclick="sub()" name="subtractinon">-</button>
+					<button class="btn btn-success" onclick="div()" name="division">/</button>
+					<button class="btn btn-success" onclick="multiply()" name="multiplication">x</button>
+					<button class="btn btn-danger" onclick="reset()" name="reset">c</button>
+				</div>
+			
+			</div>
+			
+			<br/>
+		
+			
+		</div>
+
+		<div class="alphabatical col-md-6 col-xs-12 well">
+		<h2 class="alphaOrder">Convert word in alphabatical order</h2>
+		<form class="form-inline" id="alphabatical-form">
+			<div class="alphab_form input-group col-sm-7 col-sm-offset-0  col-xs-10 col-xs-offset-1">
+				<span class="input-group-addon ">Enter the word</span>
+				<input class="form-control" type="text" name="word" id="word">
+				<span class="input-group-btn">
+					<button class="btn btn-danger" onclick="reset()">x</button>	
+				</span>
+			</div>
+	
+		</form>
+		<h4 class="ans_pos col-md-12"><span class="res-style" id="ans"></span></h4>
+	
+		<div class="alphabatical_btn">
+			<button class="btn btn-success" onclick="alphabatical()"> Submit</button>
+		</div>
+
+	</div>
+</div>
+<div class="row col-xs-12">
+	<div class="unitMatrix col-md-8 col-md-offset-2 hidden-xs hidden-sm col-xs-12 well">
+		<h2>Create Unit Matrix</h2>
+		<form class="form-inline" id="matrix-clear">
+			<div class="matrixOrder input-group col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 ">
+				<span class="input-group-addon">Enter the order of the matrix</span>
+				<input type="text" id="matrixOrd" name="text" class="form-control" placeholder="Between 0 and 41" >
+				<span class="input-group-btn">
+					<button class="btn btn-danger" onclick="clean()">x</button>	
+				</span>
+			</div>
+		</form>
+		<h4 class="ans_pos col-md-12"><span class="res-style" id="orderResult"></span></h4>
+		<div class="matrixBtn">
+			<button class="btn btn-success" onclick="matrixO()">Submit</button>
+		</div>
+	</div>
+
+</div>
+<div class="row col-xs-12">
+	<div class=" pallindrome col-md-6 col-xs-12 well">
+		<h2>Pallindrome check</h2>
+		<form class="form-inline" id="pallindrome-form">
+			<div class="input-group col-md-8 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+				<span class="input-group-addon">Enter the word or Phrase</span>
+				<input type="text" name="palindrome" id="pallindrome-entry" class="form-control">
+				<span class="input-group-btn">
+					<button class="btn btn-danger" onclick="clearfield()">x</button>	
+				</span>
+				
+			</div>
+		</form>
+		<h4 class="ans_pos col-md-12"><span class="res-style" id="pallindrome-result"></span></h4>
+		<div class="pallindrome-submit">
+			<button class="btn btn-info" onclick="checkPalindrome()">Submit</button>
+		</div>	
+	</div>
+	<div class=" factors col-md-6 col-xs-12 well">
+		<h2>Find Factors</h2>
+		<form class="form-inline" id="factors-form">
+			<div class="input-group col-md-8 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+				<span class="input-group-addon">Enter the number</span>
+				<input type="text" name="palindrome" id="factor-entry" class="form-control">
+				<span class="input-group-btn">
+					<button class="btn btn-danger" onclick="clearfield()">x</button>	
+				</span>
+				
+			</div>
+		</form>
+		<h4 class="ans_pos col-md-12"><span class="res-style" id="factor-result"></span></h4>
+		<div class="factor-submit">
+			<button class="btn btn-info" onclick="factors()">Submit</button>
+		</div>	
+	</div>
+</div>
+	
+<script type="text/javascript">
+ 	function add(){
+ 		num1=document.getElementById("firstNum").value;
+ 		num2=document.getElementById("secNum").value;
+ 		 
+ 		document.getElementById("result").innerHTML="Result is "+(+num1 + +num2).toFixed(2);
+	}
+	function sub(){
+ 		num1=document.getElementById("firstNum").value;
+ 	num2=document.getElementById("secNum").value;
+ 		document.getElementById("result").innerHTML="Result is "+(num1-num2).toFixed(2);
+ 	}	
+ 	function multiply(){
+ 		num1=document.getElementById("firstNum").value;
+ 	num2=document.getElementById("secNum").value;
+ 		document.getElementById("result").innerHTML="Result is "+(num1*num2).toFixed(2);
+ 		
+ 	}
+ 	function div(){
+ 		num1=document.getElementById("firstNum").value;
+ 	num2=document.getElementById("secNum").value;
+ 		document.getElementById("result").innerHTML="Result is "+(num1/num2).toFixed(2);
+
+ 	}
+ 	function reset(){
+ 		document.getElementById("calc-form").reset();
+ 		document.getElementById("alphabatical-form").reset();
+ 		document.getElementById("result").innerHTML="";
+}
+
+function alphabatical(){
+	var word=document.getElementById("word").value.toString();
+if(word.length===0){
+	document.getElementById("ans").innerHTML="Please enter a string to get the result";}
+else {var answer=word.split("").sort().join("")
+document.getElementById("ans").innerHTML= "Alphabatical order of ["+word+"] is : "+answer;
+}
+}
+
+function matrixO(){
+	var entry=document.getElementById("matrixOrd").value;
+	var unitMatrix=[]
+	if(isNaN(entry)===false&&entry<41){
+
+		for(i=0;i<entry;i++){
+			for(j=0;j<entry;j++){
+				if(j===i){
+					unitMatrix.push("1");
+				}
+				else if(j!=i){
+					unitMatrix.push("0");}
+			}
+			
+			unitMatrix.push("<br/>");
+		}
+		document.getElementById("orderResult").innerHTML=unitMatrix.toString();
+	}
+	else if(isNaN(entry)===true)
+	{document.getElementById("orderResult").innerHTML="Please write the order in numbers only";
+	}
+	else if(entry>40||entry<=0){
+		document.getElementById("orderResult").innerHTML="Entry should not be greater than 40 and not less than 1";
+	}
+	
+}
+function clean(){
+	document.getElementById("matrix-clear").reset();
+}
+
+function checkPalindrome(){
+	var entry=document.getElementById("pallindrome-entry").value.toString().toLowerCase().replace(/[^a-zA-Z0-9]+/g,"");
+	var revWord=entry.split("").reverse().join("");
+	if(entry===revWord){
+
+	document.getElementById("pallindrome-result").innerHTML="The entry is a pallindrome";
+	}
+	else{document.getElementById("pallindrome-result").innerHTML="The entry is not a pallindrome";}
+}
+function clearfield(){
+	document.getElementById("pallindrome-form").reset();
+	document.getElementById("factors-form").reset();
+
+}
+
+function factors(){
+		var number=document.getElementById("factor-entry").value;
+		var factor=[];
+		if(isNaN(number)===false){
+
+			var fact=number;
+			for(i=2;i<=fact;i++){
+				if(fact%i===0){
+					fact=(fact/i);
+					factor.push(i);
+
+				}
+
+			}
+			document.getElementById("factor-result").innerHTML="Here are the factors of "+number+"<br/>"+factor.toString();
+			
+		}
+		else{
+			document.getElementById("factor-result").innerHTML="We accept numbers only, please enter a number";
+		}
+
+}
+</script>
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/js/bootstrap.min.js"></script>
+	
+</body>
+</html>

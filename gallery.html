@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Photo gallery</title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link href="/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="gallerystyle.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Bungee+Inline|Creepster|Kumar+One+Outline|Pacifico" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		
+		$('#123').click(function(){
+			if($('#321').is(":hidden")){
+				 $('#321').slideDown(500);
+			}
+			else{
+				$('#321').slideUp(500);
+			}
+		});
+		});
+
+
+				
+</script>
+</head>
+
+<body >
+<header class="col-xs-12">
+	<div class="navbar nav-head navbar-fixed-top">
+		<div class="dropdown visible-xs col-xs-3 sm-men">
+		<a class="dropdown-toggle" data-toggle="dropdown">
+			<span class="men-list glyphicon glyphicon-th-list" id="123"></span>
+		</a>
+		<ul class="dropdown-menu " id="321">
+		<li><a href="index.html"><span class="men-item glyphicon glyphicon-home"></span> Home</a></li>
+		<li class="divider"></li>
+		<li><a href="aboutme.html"><span class="men-item glyphicon glyphicon-user"></span> About Me</a></li>
+		<li class="divider"></li>
+		<li class="active"><a><span class="men-item glyphicon glyphicon-picture"></span>Photo gallery</a></li>
+		<li class="divider"></li>
+		<li ><a href="jsprograms.html"><span class="men-item glyphicon glyphicon glyphicon-edit"></span>JS Programs</a></li>
+		<li class="divider"></li>		
+		<li><a href="profile.html"><span class="men-item glyphicon glyphicon-king"></span>Profile</a></li>
+		</ul>
+		</div>
+	<div class="col-md-3 col-md-offset-0 col-sm-8 col-sm-offset-2 col-xs-7 col-xs-offset-2 ">
+		<h1 class="logoline"><a href="index.html" >My Web</a></h1>
+	</div>
+	<div class="col-md-8 col-md-offset-1 col-sm-10 col-sm-offset-1 hidden-xs  ">
+	<ul class="col-xs-12 list-inline med-men nav nav-tabs">
+		<li class="col-xs-6 col-sm-3"><a href="aboutme.html"><span class="men-item glyphicon glyphicon-user"></span>About Me </a></li>
+		
+		<li class="col-xs-6 col-sm-3 active"><a><span class="men-item glyphicon glyphicon-picture"></span>Photo gallery</a></li>
+		<li class="col-xs-6 col-sm-3"><a href="jsprograms.html"><span class="men-item glyphicon glyphicon glyphicon-edit"></span>JS Programs</a></li>
+		<li class="col-xs-6 col-sm-3"><a href="profile.html"><span class="men-item glyphicon glyphicon-king"></span>Profile</a></li>
+	</ul>
+	</div>
+
+	</div>
+	
+</header>
+<br/>
+<br/>
+<div class="container1 col-md-10 col-md-offset-1">
+
+	<div class="panel panel-success col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1">
+		<div class="panel-heading">
+			<h4>
+				<a href="#album1" data-toggle="collapse">Spiti Valley, Himachal Pradesh <small>August,2016</small></a>
+			</h4>
+		</div>
+		<div id="album1" class="panel-collapse collapse in" >
+			<div class="panel-body">
+				<div class="row rowOne">
+		<div class="panel panel-info col-md-3 col-md-offset-1 col-xs-10 col-xs-offset-1">
+			<div class="panel-heading">
+				<h4>
+					<a href="#spiti-images" data-toggle="collapse" >Image 1</a> 
+				</h4>
+			</div>
+			<div id="spiti-images" class="panel-collapse collapse in">
+			<div class="Panel-body ">
+				<div>
+					<a data-target="#image1" data-toggle="modal">
+						<img src="/gallery/spiti1.jpg" class="img-responsive" alt="spiti image">
+					</a>
+				</div>
+
+			</div>	
+			</div>
+		</div>
+		<div class="modal fade" id="image1" tabindex="-1">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button class="close" data-dismiss="modal">&times;</button>
+					</div>
+					<div class="modal-body">
+		<div id="imageSlide" class="carousel slide" data-interval="false"> <!-- data-ride="carousel"  data-interval="false" -->
+		<ul class="carousel-indicators">
+			<li data-target="#imageSlide" data-slide-to="0" class="active"></li>
+			<li data-target="#imageSlide" data-slide-to="1"></li>
+			<li data-target="#imageSlide" data-slide-to="2"></li>
+			<li data-target="#imageSlide" data-slide-to="3"></li>
+			<li data-target="#imageSlide" data-slide-to="4"></li>
+			<li data-target="#imageSlide" data-slide-to="5"></li>
+		</ul>
+		<div class="carousel-inner">
+			<div class="item active">
+				<img src="/gallery/spiti1.jpg" class="img-responsive" alt="spiti image">
+				<div class="carousel-caption">
+					<h3>Spiti Valley, Himachal Pradesh</h3>
+					<p>Image 1</p>
+				</div>
+			</div>
+			<div class="item">
+				<img src="/gallery/spiti2.jpg" class="img-responsive" alt="spiti image">
+				<div class="carousel-caption">
+					<h3>Spiti Valley, Himachal Pradesh</h3>
+					<p>Image 2</p>
+				</div>
+			</div>
+			<div class="item">
+				<img src="/gallery/spiti3.jpg" class="img-responsive" alt="spiti image">
+				<div class="carousel-caption">
+					<h3>Spiti Valley, Himachal Pradesh</h3>
+					<p>Image 3</p>
+				</div>
+			</div>
+			<div class="item">
+				<img src="/gallery/spiti4.jpg" class="img-responsive" alt="spiti image">
+				<div class="carousel-caption">
+					<h3>Spiti Valley, Himachal Pradesh</h3>
+					<p>Image 4</p>
+				</div>
+			</div>
+			<div class="item">
+				<img src="/gallery/spiti5.jpg" class="img-responsive" alt="spiti image">
+				<div class="carousel-caption">
+					<h3>Spiti Valley, Himachal Pradesh</h3>
+					<p>Image 5</p>
+				</div>
+			</div>
+			<div class="item">
+				<img src="/gallery/spiti6.jpg" class="img-responsive" alt="spiti image">
+				<div class="carousel-caption">
+					<h3>Spiti Valley, Himachal Pradesh</h3>
+					<p>Image 6</p>
+				</div>
+			</div>
+
+		</div>
+		<a href="#imageSlide" class="carousel-control left" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left"></span>
+		</a>
+		<a href="#imageSlide" class="carousel-control right" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right"></span>
+		</a>
+	</div>
+						<!-- <img src="/gallery/spiti1.jpg" class="img-responsive" alt="spiti image"> -->
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<div class="panel panel-info col-md-3 col-md-offset-1 col-xs-10 col-xs-offset-1">
+			<div class="panel-heading">
+				<h4>
+					<a href="#spiti-image2" data-toggle="collapse">Image 2</a> 
+				</h4>
+			</div>
+			<div id="spiti-image2" class="panel-collapse collapse in">
+			<div class="Panel-body ">
+				<div class="">
+					<a data-target="#image2" data-toggle="modal">
+						<img src="/gallery/spiti2.jpg" class="img-responsive" alt="spiti image">
+					</a>
+				</div>
+			</div>	
+			</div>
+		</div>
+		<div class="modal fade" id="image2" tabindex="-1">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button class="close" data-dismiss="modal">&times;</button>
+					</div>
+					<div class="modal-body">
+					<div id="imageSlide1" class="carousel slide" data-interval="false"> <!-- data-ride="carousel" data-interval="false" -->
+		<ul class="carousel-indicators">
+			<li data-target="#imageSlide1" data-slide-to="0"></li>
+			<li data-target="#imageSlide1" data-slide-to="1" class="active"></li>
+			<li data-target="#imageSlide1" data-slide-to="2"></li>
+			<li data-target="#imageSlide1" data-slide-to="3"></li>
+			<li data-target="#imageSlide1" data-slide-to="4"></li>
+			<li data-target="#imageSlide1" data-slide-to="5"></li>
+		</ul>
+		<div class="carousel-inner">
+			<div class="item">
+				<img src="/gallery/spiti1.jpg" class="img-responsive" alt="spiti image">
+				<div class="carousel-caption">
+					<h3>Spiti Valley, Himachal Pradesh</h3>
+					<p>Image 1</p>
+				</div>
+			</div>
+			<div class="item active">
+				<img src="/gallery/spiti2.jpg" class="img-responsive" alt="spiti image">
+				<div class="carousel-caption">
+					<h3>Spiti Valley, Himachal Pradesh</h3>
+					<p>Image 2</p>
+				</div>
+			</div>
+			<div class="item">
+				<img src="/gallery/spiti3.jpg" class="img-responsive" alt="spiti image">
+				<div class="carousel-caption">
+					<h3>Spiti Valley, Himachal Pradesh</h3>
+					<p>Image 3</p>
+				</div>
+			</div>
+			<div class="item">
+				<img src="/gallery/spiti4.jpg" class="img-responsive" alt="spiti image">
+				<div class="carousel-caption">
+					<h3>Spiti Valley, Himachal Pradesh</h3>
+					<p>Image 4</p>
+				</div>
+			</div>
+			<div class="item">
+				<img src="/gallery/spiti5.jpg" class="img-responsive" alt="spiti image">
+				<div class="carousel-caption">
+					<h3>Spiti Valley, Himachal Pradesh</h3>
+					<p>Image 5</p>
+				</div>
+			</div>
+			<div class="item">
+				<img src="/gallery/spiti6.jpg" class="img-responsive" alt="spiti image">
+				<div class="carousel-caption">
+					<h3>Spiti Valley, Himachal Pradesh</h3>
+					<p>Image 6</p>
+				</div>
+			</div>
+
+		</div>
+		<a href="#imageSlide1" class="carousel-control left" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left"></span>
+		</a>
+		<a href="#imageSlide1" class="carousel-control right" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right"></span>
+		</a>
+	</div>
+						<!-- <img src="/gallery/spiti2.jpg" class="img-responsive" alt="spiti image"> -->
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<div class="panel panel-info col-md-3 col-md-offset-1 col-xs-10 col-xs-offset-1">
+			<div class="panel-heading">
+				<h4>
+					<a href="#spiti-image3" data-toggle="collapse">Image 3</a> 
+				</h4>
+			</div>
+			<div id="spiti-image3" class="panel-collapse collapse in">
+			<div class="Panel-body ">
+				<div class="">
+					<a data-target="#image3" data-toggle="modal">
+						<img src="/gallery/spiti3.jpg" class="img-responsive" alt="spiti image">
+					</a>
+				</div>
+			</div>	
+			</div>
+		</div>
+		<div class="modal fade" id="image3" tabindex="-1">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button class="close" data-dismiss="modal">&times;</button>
+					</div>
+					<div class="modal-body">
+					<div id="imageSlide2" class="carousel slide" data-interval="false" > <!-- data-ride="carousel" -->
+		<ul class="carousel-indicators">
+			<li data-target="#imageSlide2" data-slide-to="0"></li>
+			<li data-target="#imageSlide2" data-slide-to="1"></li>
+			<li data-target="#imageSlide2" data-slide-to="2" class="active"></li>
+			<li data-target="#imageSlide2" data-slide-to="3"></li>
+			<li data-target="#imageSlide2" data-slide-to="4"></li>
+			<li data-target="#imageSlide2" data-slide-to="5"></li>
+		</ul>
+		<div class="carousel-inner">
+			<div class="item">
+				<img src="/gallery/spiti1.jpg" class="img-responsive" alt="spiti image">
+				<div class="carousel-caption">
+					<h3>Spiti Valley, Himachal Pradesh</h3>
+					<p>Image 1</p>
+				</div>
+			</div>
+			<div class="item">
+				<img src="/gallery/spiti2.jpg" class="img-responsive" alt="spiti image">
+				<div class="carousel-caption">
+					<h3>Spiti Valley, Himachal Pradesh</h3>
+					<p>Image 2</p>
+				</div>
+			</div>
+			<div class="item active">
+				<img src="/gallery/spiti3.jpg" class="img-responsive" alt="spiti image">
+				<div class="carousel-caption">
+					<h3>Spiti Valley, Himachal Pradesh</h3>
+					<p>Image 3</p>
+				</div>
+			</div>
+			<div class="item">
+				<img src="/gallery/spiti4.jpg" class="img-responsive" alt="spiti image">
+				<div class="carousel-caption">
+					<h3>Spiti Valley, Himachal Pradesh</h3>
+					<p>Image 4</p>
+				</div>
+			</div>
+			<div class="item">
+				<img src="/gallery/spiti5.jpg" class="img-responsive" alt="spiti image">
+				<div class="carousel-caption">
+					<h3>Spiti Valley, Himachal Pradesh</h3>
+					<p>Image 5</p>
+				</div>
+			</div>
+			<div class="item">
+				<img src="/gallery/spiti6.jpg" class="img-responsive" alt="spiti image">
+				<div class="carousel-caption">
+					<h3>Spiti Valley, Himachal Pradesh</h3>
+					<p>Image 6</p>
+				</div>
+			</div>
+
+		</div>
+		<a href="#imageSlide2" class="carousel-control left" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left"></span>
+		</a>
+		<a href="#imageSlide2" class="carousel-control right" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right"></span>
+		</a>
+	</div>
+						<!-- <img src="/gallery/spiti3.jpg" class="img-responsive" alt="spiti image"> -->
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<div class="row rowOne">
+		<div class="panel panel-info col-md-3 col-md-offset-1 col-xs-10 col-xs-offset-1">
+			<div class="panel-heading">
+				<h4>
+					<a href="#spiti-image4" data-toggle="collapse" >Image 4</a> 
+				</h4>
+			</div>
+			<div id="spiti-image4" class="panel-collapse collapse in">
+			<div class="Panel-body ">
+				<div class="">
+					<a data-target="#image4" data-toggle="modal">
+						<img src="/gallery/spiti4.jpg" class="img-responsive" alt="spiti image">
+					</a>
+				</div>
+			</div>	
+			</div>
+		</div>
+		<div class="modal fade" id="image4" tabindex="-1">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button class="close" data-dismiss="modal">&times;</button>
+					</div>
+					<div class="modal-body">
+					<div id="imageSlide3" class="carousel slide" data-interval="false" > <!-- data-ride="carousel" -->
+		<ul class="carousel-indicators">
+			<li data-target="#imageSlide3" data-slide-to="0"></li>
+			<li data-target="#imageSlide3" data-slide-to="1"></li>
+			<li data-target="#imageSlide3" data-slide-to="2"></li>
+			<li data-target="#imageSlide3" data-slide-to="3" class="active"></li>
+			<li data-target="#imageSlide3" data-slide-to="4"></li>
+			<li data-target="#imageSlide3" data-slide-to="5"></li>
+		</ul>
+		<div class="carousel-inner">
+			<div class="item">
+				<img src="/gallery/spiti1.jpg" class="img-responsive" alt="spiti image">
+				<div class="carousel-caption">
+					<h3>Spiti Valley, Himachal Pradesh</h3>
+					<p>Image 1</p>
+				</div>
+			</div>
+			<div class="item">
+				<img src="/gallery/spiti2.jpg" class="img-responsive" alt="spiti image">
+				<div class="carousel-caption">
+					<h3>Spiti Valley, Himachal Pradesh</h3>
+					<p>Image 2</p>
+				</div>
+			</div>
+			<div class="item">
+				<img src="/gallery/spiti3.jpg" class="img-responsive" alt="spiti image">
+				<div class="carousel-caption">
+					<h3>Spiti Valley, Himachal Pradesh</h3>
+					<p>Image 3</p>
+				</div>
+			</div>
+			<div class="item active">
+				<img src="/gallery/spiti4.jpg" class="img-responsive" alt="spiti image">
+				<div class="carousel-caption">
+					<h3>Spiti Valley, Himachal Pradesh</h3>
+					<p>Image 4</p>
+				</div>
+			</div>
+			<div class="item">
+				<img src="/gallery/spiti5.jpg" class="img-responsive" alt="spiti image">
+				<div class="carousel-caption">
+					<h3>Spiti Valley, Himachal Pradesh</h3>
+					<p>Image 5</p>
+				</div>
+			</div>
+			<div class="item">
+				<img src="/gallery/spiti6.jpg" class="img-responsive" alt="spiti image">
+				<div class="carousel-caption">
+					<h3>Spiti Valley, Himachal Pradesh</h3>
+					<p>Image 6</p>
+				</div>
+			</div>
+
+		</div>
+		<a href="#imageSlide3" class="carousel-control left" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left"></span>
+		</a>
+		<a href="#imageSlide3" class="carousel-control right" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right"></span>
+		</a>
+	</div>
+						<!-- <img src="/gallery/spiti4.jpg" class="img-responsive" alt="spiti image"> -->
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<div class="panel panel-info col-md-3 col-md-offset-1 col-xs-10 col-xs-offset-1">
+			<div class="panel-heading">
+				<h4>
+					<a href="#spiti-image5" data-toggle="collapse">Image 5</a> 
+				</h4>
+			</div>
+			<div id="spiti-image5" class="panel-collapse collapse in">
+			<div class="Panel-body ">
+				<div class="">
+					<a data-target="#image5" data-toggle="modal">
+						<img src="/gallery/spiti5.jpg" class="img-responsive" alt="spiti image">
+					</a>
+				</div>
+			</div>	
+			</div>
+		</div>
+		<div class="modal fade" id="image5" tabindex="-1">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button class="close" data-dismiss="modal">&times;</button>
+					</div>
+					<div class="modal-body">
+					<div id="imageSlide4" class="carousel slide" data-interval="false" > <!-- data-ride="carousel" -->
+		<ul class="carousel-indicators">
+			<li data-target="#imageSlide4" data-slide-to="0"></li>
+			<li data-target="#imageSlide4" data-slide-to="1"></li>
+			<li data-target="#imageSlide4" data-slide-to="2"></li>
+			<li data-target="#imageSlide4" data-slide-to="3"></li>
+			<li data-target="#imageSlide4" data-slide-to="4" class="active"></li>
+			<li data-target="#imageSlide4" data-slide-to="5"></li>
+		</ul>
+		<div class="carousel-inner">
+			<div class="item">
+				<img src="/gallery/spiti1.jpg" class="img-responsive" alt="spiti image">
+				<div class="carousel-caption">
+					<h3>Spiti Valley, Himachal Pradesh</h3>
+					<p>Image 1</p>
+				</div>
+			</div>
+			<div class="item">
+				<img src="/gallery/spiti2.jpg" class="img-responsive" alt="spiti image">
+				<div class="carousel-caption">
+					<h3>Spiti Valley, Himachal Pradesh</h3>
+					<p>Image 2</p>
+				</div>
+			</div>
+			<div class="item">
+				<img src="/gallery/spiti3.jpg" class="img-responsive" alt="spiti image">
+				<div class="carousel-caption">
+					<h3>Spiti Valley, Himachal Pradesh</h3>
+					<p>Image 3</p>
+				</div>
+			</div>
+			<div class="item">
+				<img src="/gallery/spiti4.jpg" class="img-responsive" alt="spiti image">
+				<div class="carousel-caption">
+					<h3>Spiti Valley, Himachal Pradesh</h3>
+					<p>Image 4</p>
+				</div>
+			</div>
+			<div class="item active">
+				<img src="/gallery/spiti5.jpg" class="img-responsive" alt="spiti image">
+				<div class="carousel-caption">
+					<h3>Spiti Valley, Himachal Pradesh</h3>
+					<p>Image 5</p>
+				</div>
+			</div>
+			<div class="item">
+				<img src="/gallery/spiti6.jpg" class="img-responsive" alt="spiti image">
+				<div class="carousel-caption">
+					<h3>Spiti Valley, Himachal Pradesh</h3>
+					<p>Image 6</p>
+				</div>
+			</div>
+
+		</div>
+		<a href="#imageSlide4" class="carousel-control left" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left"></span>
+		</a>
+		<a href="#imageSlide4" class="carousel-control right" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right"></span>
+		</a>
+	</div>
+						<!-- <img src="/gallery/spiti5.jpg" class="img-responsive" alt="spiti image"> -->
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<div class="panel panel-info col-md-3 col-md-offset-1 col-xs-10 col-xs-offset-1">
+			<div class="panel-heading">
+				<h4>
+					<a href="#spiti-image6" data-toggle="collapse">Image 6</a> 
+				</h4>
+			</div>
+			<div id="spiti-image6" class="panel-collapse collapse in">
+			<div class="Panel-body ">
+				<div class="">
+					<a data-target="#image6" data-toggle="modal">
+						<img src="/gallery/spiti6.jpg" class="img-responsive" alt="spiti image">
+					</a>
+				</div>
+			</div>	
+			</div>
+		</div>
+		<div class="modal fade" id="image6" tabindex="-1">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button class="close" data-dismiss="modal">&times;</button>
+					</div>
+					<div class="modal-body">
+						<div id="imageSlide5" class="carousel slide" data-interval="false" > <!-- data-ride="carousel" -->
+		<ol class="carousel-indicators">
+			<li data-target="#imageSlide5" data-slide-to="0"></li>
+			<li data-target="#imageSlide5" data-slide-to="1"></li>
+			<li data-target="#imageSlide5" data-slide-to="2"></li>
+			<li data-target="#imageSlide5" data-slide-to="3"></li>
+			<li data-target="#imageSlide5" data-slide-to="4"></li>
+			<li data-target="#imageSlide5" data-slide-to="5" class="active"></li>
+		</ol>
+		<div class="carousel-inner">
+			<div class="item">
+				<img src="/gallery/spiti1.jpg" class="img-responsive" alt="spiti image">
+				<div class="carousel-caption">
+					<h3>Spiti Valley, Himachal Pradesh</h3>
+					<p>Image 1</p>
+				</div>
+			</div>
+			<div class="item">
+				<img src="/gallery/spiti2.jpg" class="img-responsive" alt="spiti image">
+				<div class="carousel-caption">
+					<h3>Spiti Valley, Himachal Pradesh</h3>
+					<p>Image 2</p>
+				</div>
+			</div>
+			<div class="item">
+				<img src="/gallery/spiti3.jpg" class="img-responsive" alt="spiti image">
+				<div class="carousel-caption">
+					<h3>Spiti Valley, Himachal Pradesh</h3>
+					<p>Image 3</p>
+				</div>
+			</div>
+			<div class="item">
+				<img src="/gallery/spiti4.jpg" class="img-responsive" alt="spiti image">
+				<div class="carousel-caption">
+					<h3>Spiti Valley, Himachal Pradesh</h3>
+					<p>Image 4</p>
+				</div>
+			</div>
+			<div class="item">
+				<img src="/gallery/spiti5.jpg" class="img-responsive" alt="spiti image">
+				<div class="carousel-caption">
+					<h3>Spiti Valley, Himachal Pradesh</h3>
+					<p>Image 5</p>
+				</div>
+			</div>
+			<div class="item active">
+				<img src="/gallery/spiti6.jpg" class="img-responsive" alt="spiti image">
+				<div class="carousel-caption">
+					<h3>Spiti Valley, Himachal Pradesh</h3>
+					<p>Image 6</p>
+				</div>
+			</div>
+
+		</div>
+		<a href="#imageSlide5" class="carousel-control left" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left"></span>
+		</a>
+		<a href="#imageSlide5" class="carousel-control right" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right"></span>
+		</a>
+	</div>
+						<!-- <img src="/gallery/spiti6.jpg" class="img-responsive" alt="spiti image"> -->
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		</div>
+	
+		</div>
+			
+		</div>
+			
+	</div>
+
+	
+
+	<div class="panel panel-success col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1">
+		<div class="panel-heading">
+			<h4>
+				<a href="#album2" data-toggle="collapse">Jaipur, Rajasthan <small>March,2016</small></a>
+			</h4>
+		</div>
+		<div id="album2" class="panel-collapse collapse" >
+			<div class="panel-body">
+				<div class="row rowOne">
+		<div class="panel panel-info col-md-3 col-md-offset-1 col-xs-10 col-xs-offset-1">
+			<div class="panel-heading">
+				<h4>
+					<a href="#raj-images" data-toggle="collapse" >Image 1</a> 
+				</h4>
+			</div>
+			<div id="raj-images" class="panel-collapse collapse in">
+			<div class="Panel-body ">
+				<div>
+					<a data-target="#image7" data-toggle="modal">
+						<img src="/gallery/raj1.jpg" class="img-responsive" alt="spiti image">
+					</a>
+				</div>
+			</div>	
+			</div>
+		</div>
+		<div class="modal fade" id="image7" tabindex="-1">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button class="close" data-dismiss="modal">&times;</button>
+					</div>
+					<div class="modal-body">
+					<div id="imageSlide6" class="carousel slide" data-interval="false" > <!-- data-ride="carousel" -->
+		<ul class="carousel-indicators">
+			<li data-target="#imageSlide6" data-slide-to="0" class="active"></li>
+			<li data-target="#imageSlide6" data-slide-to="1"></li>
+			<li data-target="#imageSlide6" data-slide-to="2"></li>
+			<li data-target="#imageSlide6" data-slide-to="3"></li>
+			<li data-target="#imageSlide6" data-slide-to="4"></li>
+			<li data-target="#imageSlide6" data-slide-to="5"></li>
+		</ul>
+		<div class="carousel-inner">
+			<div class="item active">
+				<img src="/gallery/raj1.jpg" class="img-responsive" alt="rajasthan image">
+				<div class="carousel-caption">
+					<h3>Jaipur, Rajasthan</h3>
+					<p>Image 1</p>
+				</div>
+			</div>
+			<div class="item">
+				<img src="/gallery/raj2.jpg" class="img-responsive" alt="rajasthan image">
+				<div class="carousel-caption">
+					<h3>Jaipur, Rajasthan</h3>
+					<p>Image 2</p>
+				</div>
+			</div>
+			<div class="item">
+				<img src="/gallery/raj3.jpg" class="img-responsive" alt="rajasthan image">
+				<div class="carousel-caption">
+					<h3>Jaipur, Rajasthan</h3>
+					<p>Image 3</p>
+				</div>
+			</div>
+			<div class="item">
+				<img src="/gallery/raj4.jpg" class="img-responsive" alt="rajasthan image">
+				<div class="carousel-caption">
+					<h3>Jaipur, Rajasthan</h3>
+					<p>Image 4</p>
+				</div>
+			</div>
+			<div class="item">
+				<img src="/gallery/raj5.jpg" class="img-responsive" alt="rajasthan image">
+				<div class="carousel-caption">
+					<h3>Jaipur, Rajasthan</h3>
+					<p>Image 5</p>
+				</div>
+			</div>
+			<div class="item">
+				<img src="/gallery/raj6.jpg" class="img-responsive" alt="rajasthan image">
+				<div class="carousel-caption">
+					<h3>Jaipur, Rajasthan</h3>
+					<p>Image 6</p>
+				</div>
+			</div>
+
+		</div>
+		<a href="#imageSlide6" class="carousel-control left" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left"></span>
+		</a>
+		<a href="#imageSlide6" class="carousel-control right" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right"></span>
+		</a>
+	</div>
+						<!-- <img src="/gallery/raj1.jpg" class="img-responsive" alt="rajasthan image"> -->
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<div class="panel panel-info col-md-3 col-md-offset-1 col-xs-10 col-xs-offset-1">
+			<div class="panel-heading">
+				<h4>
+					<a href="#raj-images2" data-toggle="collapse">Image 2</a> 
+				</h4>
+			</div>
+			<div id="raj-images2" class="panel-collapse collapse in">
+			<div class="Panel-body ">
+				<div class="">
+					<a data-target="#image8" data-toggle="modal">
+						<img src="/gallery/raj2.jpg" class="img-responsive" alt="rajasthan image">
+					</a>
+				</div>
+			</div>	
+			</div>
+		</div>
+		<div class="modal fade" id="image8" tabindex="-1">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button class="close" data-dismiss="modal">&times;</button>
+					</div>
+					<div class="modal-body">
+					<div id="imageSlide7" class="carousel slide" data-interval="false" > <!-- data-ride="carousel" -->
+		<ul class="carousel-indicators">
+			<li data-target="#imageSlide7" data-slide-to="0"></li>
+			<li data-target="#imageSlide7" data-slide-to="1" class="active"></li>
+			<li data-target="#imageSlide7" data-slide-to="2"></li>
+			<li data-target="#imageSlide7" data-slide-to="3"></li>
+			<li data-target="#imageSlide7" data-slide-to="4"></li>
+			<li data-target="#imageSlide7" data-slide-to="5"></li>
+		</ul>
+		<div class="carousel-inner">
+			<div class="item">
+				<img src="/gallery/raj1.jpg" class="img-responsive" alt="rajasthan image">
+				<div class="carousel-caption">
+					<h3>Jaipur, Rajasthan</h3>
+					<p>Image 1</p>
+				</div>
+			</div>
+			<div class="item active">
+				<img src="/gallery/raj2.jpg" class="img-responsive" alt="rajasthan image">
+				<div class="carousel-caption">
+					<h3>Jaipur, Rajasthan</h3>
+					<p>Image 2</p>
+				</div>
+			</div>
+			<div class="item">
+				<img src="/gallery/raj3.jpg" class="img-responsive" alt="rajasthan image">
+				<div class="carousel-caption">
+					<h3>Jaipur, Rajasthan</h3>
+					<p>Image 3</p>
+				</div>
+			</div>
+			<div class="item">
+				<img src="/gallery/raj4.jpg" class="img-responsive" alt="rajasthan image">
+				<div class="carousel-caption">
+					<h3>Jaipur, Rajasthan</h3>
+					<p>Image 4</p>
+				</div>
+			</div>
+			<div class="item">
+				<img src="/gallery/raj5.jpg" class="img-responsive" alt="rajasthan image">
+				<div class="carousel-caption">
+					<h3>Jaipur, Rajasthan</h3>
+					<p>Image 5</p>
+				</div>
+			</div>
+			<div class="item">
+				<img src="/gallery/raj6.jpg" class="img-responsive" alt="rajasthan image">
+				<div class="carousel-caption">
+					<h3>Jaipur, Rajasthan</h3>
+					<p>Image 6</p>
+				</div>
+			</div>
+
+		</div>
+		<a href="#imageSlide7" class="carousel-control left" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left"></span>
+		</a>
+		<a href="#imageSlide7" class="carousel-control right" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right"></span>
+		</a>
+	</div>
+						<!-- <img src="/gallery/raj2.jpg" class="img-responsive" alt="rajasthan image"> -->
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<div class="panel panel-info col-md-3 col-md-offset-1 col-xs-10 col-xs-offset-1">
+			<div class="panel-heading">
+				<h4>
+					<a href="#raj-images3" data-toggle="collapse">Image 3</a> 
+				</h4>
+			</div>
+			<div id="raj-images3" class="panel-collapse collapse in">
+			<div class="Panel-body ">
+				<div class="">
+					<a data-target="#image9" data-toggle="modal">
+						<img src="/gallery/raj3.jpg" class="img-responsive" alt="rajasthan image">
+					</a>
+				</div>
+			</div>	
+			</div>
+		</div>
+		<div class="modal fade" id="image9" tabindex="-1">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button class="close" data-dismiss="modal">&times;</button>
+					</div>
+					<div class="modal-body">
+					<div id="imageSlide8" class="carousel slide" data-interval="false" > <!-- data-ride="carousel" -->
+		<ul class="carousel-indicators">
+			<li data-target="#imageSlide8" data-slide-to="0"></li>
+			<li data-target="#imageSlide8" data-slide-to="1"></li>
+			<li data-target="#imageSlide8" data-slide-to="2" class="active"></li>
+			<li data-target="#imageSlide8" data-slide-to="3"></li>
+			<li data-target="#imageSlide8" data-slide-to="4"></li>
+			<li data-target="#imageSlide8" data-slide-to="5"></li>
+		</ul>
+		<div class="carousel-inner">
+			<div class="item">
+				<img src="/gallery/raj1.jpg" class="img-responsive" alt="rajasthan image">
+				<div class="carousel-caption">
+					<h3>Jaipur, Rajasthan</h3>
+					<p>Image 1</p>
+				</div>
+			</div>
+			<div class="item">
+				<img src="/gallery/raj2.jpg" class="img-responsive" alt="rajasthan image">
+				<div class="carousel-caption">
+					<h3>Jaipur, Rajasthan</h3>
+					<p>Image 2</p>
+				</div>
+			</div>
+			<div class="item active">
+				<img src="/gallery/raj3.jpg" class="img-responsive" alt="rajasthan image">
+				<div class="carousel-caption">
+					<h3>Jaipur, Rajasthan</h3>
+					<p>Image 3</p>
+				</div>
+			</div>
+			<div class="item">
+				<img src="/gallery/raj4.jpg" class="img-responsive" alt="rajasthan image">
+				<div class="carousel-caption">
+					<h3>Jaipur, Rajasthan</h3>
+					<p>Image 4</p>
+				</div>
+			</div>
+			<div class="item">
+				<img src="/gallery/raj5.jpg" class="img-responsive" alt="rajasthan image">
+				<div class="carousel-caption">
+					<h3>Jaipur, Rajasthan</h3>
+					<p>Image 5</p>
+				</div>
+			</div>
+			<div class="item">
+				<img src="/gallery/raj6.jpg" class="img-responsive" alt="rajasthan image">
+				<div class="carousel-caption">
+					<h3>Jaipur, Rajasthan</h3>
+					<p>Image 6</p>
+				</div>
+			</div>
+
+		</div>
+		<a href="#imageSlide8" class="carousel-control left" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left"></span>
+		</a>
+		<a href="#imageSlide8" class="carousel-control right" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right"></span>
+		</a>
+	</div>
+						<!-- <img src="/gallery/raj3.jpg" class="img-responsive" alt="rajasthan image"> -->
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<div class="row rowOne">
+		<div class="panel panel-info col-md-3 col-md-offset-1 col-xs-10 col-xs-offset-1">
+			<div class="panel-heading">
+				<h4>
+					<a href="#raj-images4" data-toggle="collapse" >Image 4</a> 
+				</h4>
+			</div>
+			<div id="raj-images4" class="panel-collapse collapse in">
+			<div class="Panel-body ">
+				<div class="">
+					<a data-target="#image10" data-toggle="modal">
+						<img src="/gallery/raj4.jpg" class="img-responsive" alt="rajasthan image">
+					</a>
+				</div>
+			</div>	
+			</div>
+		</div>
+		<div class="modal fade" id="image10" tabindex="-1">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button class="close" data-dismiss="modal">&times;</button>
+					</div>
+					<div class="modal-body">
+					<div id="imageSlide9" class="carousel slide" data-interval="false" > <!-- data-ride="carousel" -->
+		<ul class="carousel-indicators">
+			<li data-target="#imageSlide9" data-slide-to="0"></li>
+			<li data-target="#imageSlide9" data-slide-to="1"></li>
+			<li data-target="#imageSlide9" data-slide-to="2"></li>
+			<li data-target="#imageSlide9" data-slide-to="3" class="active"></li>
+			<li data-target="#imageSlide9" data-slide-to="4"></li>
+			<li data-target="#imageSlide9" data-slide-to="5"></li>
+		</ul>
+		<div class="carousel-inner">
+			<div class="item">
+				<img src="/gallery/raj1.jpg" class="img-responsive" alt="rajasthan image">
+				<div class="carousel-caption">
+					<h3>Jaipur, Rajasthan</h3>
+					<p>Image 1</p>
+				</div>
+			</div>
+			<div class="item">
+				<img src="/gallery/raj2.jpg" class="img-responsive" alt="rajasthan image">
+				<div class="carousel-caption">
+					<h3>Jaipur, Rajasthan</h3>
+					<p>Image 2</p>
+				</div>
+			</div>
+			<div class="item">
+				<img src="/gallery/raj3.jpg" class="img-responsive" alt="rajasthan image">
+				<div class="carousel-caption">
+					<h3>Jaipur, Rajasthan</h3>
+					<p>Image 3</p>
+				</div>
+			</div>
+			<div class="item active">
+				<img src="/gallery/raj4.jpg" class="img-responsive" alt="rajasthan image">
+				<div class="carousel-caption">
+					<h3>Jaipur, Rajasthan</h3>
+					<p>Image 4</p>
+				</div>
+			</div>
+			<div class="item">
+				<img src="/gallery/raj5.jpg" class="img-responsive" alt="rajasthan image">
+				<div class="carousel-caption">
+					<h3>Jaipur, Rajasthan</h3>
+					<p>Image 5</p>
+				</div>
+			</div>
+			<div class="item">
+				<img src="/gallery/raj6.jpg" class="img-responsive" alt="rajasthan image">
+				<div class="carousel-caption">
+					<h3>Jaipur, Rajasthan</h3>
+					<p>Image 6</p>
+				</div>
+			</div>
+
+		</div>
+		<a href="#imageSlide9" class="carousel-control left" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left"></span>
+		</a>
+		<a href="#imageSlide9" class="carousel-control right" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right"></span>
+		</a>
+	</div>
+						<!-- <img src="/gallery/raj4.jpg" class="img-responsive" alt="rajasthan image"> -->
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<div class="panel panel-info col-md-3 col-md-offset-1 col-xs-10 col-xs-offset-1">
+			<div class="panel-heading">
+				<h4>
+					<a href="#raj-images5" data-toggle="collapse">Image 5</a> 
+				</h4>
+			</div>
+			<div id="raj-images5" class="panel-collapse collapse in">
+			<div class="Panel-body ">
+				<div class="">
+					<a data-target="#image11" data-toggle="modal">
+						<img src="/gallery/raj5.jpg" class="img-responsive" alt="rajasthan image">
+					</a>
+				</div>
+			</div>	
+			</div>
+		</div>
+		<div class="modal fade" id="image11" tabindex="-1">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button class="close" data-dismiss="modal">&times;</button>
+					</div>
+					<div class="modal-body">
+					<div id="imageSlide10" class="carousel slide" data-interval="false" > <!-- data-ride="carousel" -->
+		<ul class="carousel-indicators">
+			<li data-target="#imageSlide10" data-slide-to="0"></li>
+			<li data-target="#imageSlide10" data-slide-to="1"></li>
+			<li data-target="#imageSlide10" data-slide-to="2"></li>
+			<li data-target="#imageSlide10" data-slide-to="3"></li>
+			<li data-target="#imageSlide10" data-slide-to="4" class="active"></li>
+			<li data-target="#imageSlide10" data-slide-to="5"></li>
+		</ul>
+		<div class="carousel-inner">
+			<div class="item">
+				<img src="/gallery/raj1.jpg" class="img-responsive" alt="rajasthan image">
+				<div class="carousel-caption">
+					<h3>Jaipur, Rajasthan</h3>
+					<p>Image 1</p>
+				</div>
+			</div>
+			<div class="item">
+				<img src="/gallery/raj2.jpg" class="img-responsive" alt="rajasthan image">
+				<div class="carousel-caption">
+					<h3>Jaipur, Rajasthan</h3>
+					<p>Image 2</p>
+				</div>
+			</div>
+			<div class="item">
+				<img src="/gallery/raj3.jpg" class="img-responsive" alt="rajasthan image">
+				<div class="carousel-caption">
+					<h3>Jaipur, Rajasthan</h3>
+					<p>Image 3</p>
+				</div>
+			</div>
+			<div class="item">
+				<img src="/gallery/raj4.jpg" class="img-responsive" alt="rajasthan image">
+				<div class="carousel-caption">
+					<h3>Jaipur, Rajasthan</h3>
+					<p>Image 4</p>
+				</div>
+			</div>
+			<div class="item active">
+				<img src="/gallery/raj5.jpg" class="img-responsive" alt="rajasthan image">
+				<div class="carousel-caption">
+					<h3>Jaipur, Rajasthan</h3>
+					<p>Image 5</p>
+				</div>
+			</div>
+			<div class="item">
+				<img src="/gallery/raj6.jpg" class="img-responsive" alt="rajasthan image">
+				<div class="carousel-caption">
+					<h3>Jaipur, Rajasthan</h3>
+					<p>Image 6</p>
+				</div>
+			</div>
+
+		</div>
+		<a href="#imageSlide10" class="carousel-control left" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left"></span>
+		</a>
+		<a href="#imageSlide10" class="carousel-control right" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right"></span>
+		</a>
+	</div>
+						<!-- <img src="/gallery/raj5.jpg" class="img-responsive" alt="rajasthan image"> -->
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<div class="panel panel-info col-md-3 col-md-offset-1 col-xs-10 col-xs-offset-1">
+			<div class="panel-heading">
+				<h4>
+					<a href="#raj-images6" data-toggle="collapse">Image 6</a> 
+				</h4>
+			</div>
+			<div id="raj-images6" class="panel-collapse collapse in">
+			<div class="Panel-body ">
+				<div class="">
+					<a data-target="#image12" data-toggle="modal">
+						<img src="/gallery/raj6.jpg" class="img-responsive" alt="rajasthan image">
+					</a>
+				</div>
+			</div>	
+			</div>
+		</div>
+		<div class="modal fade" id="image12" tabindex="-1">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button class="close" data-dismiss="modal">&times;</button>
+					</div>
+					<div class="modal-body">
+					<div id="imageSlide11" class="carousel slide" data-interval="false" > <!-- data-ride="carousel" -->
+		<ul class="carousel-indicators">
+			<li data-target="#imageSlide11" data-slide-to="0"></li>
+			<li data-target="#imageSlide11" data-slide-to="1"></li>
+			<li data-target="#imageSlide11" data-slide-to="2"></li>
+			<li data-target="#imageSlide11" data-slide-to="3"></li>
+			<li data-target="#imageSlide11" data-slide-to="4"></li>
+			<li data-target="#imageSlide11" data-slide-to="5" class="active"></li>
+		</ul>
+		<div class="carousel-inner">
+			<div class="item">
+				<img src="/gallery/raj1.jpg" class="img-responsive" alt="rajasthan image">
+				<div class="carousel-caption">
+					<h3>Jaipur, Rajasthan</h3>
+					<p>Image 1</p>
+				</div>
+			</div>
+			<div class="item">
+				<img src="/gallery/raj2.jpg" class="img-responsive" alt="rajasthan image">
+				<div class="carousel-caption">
+					<h3>Jaipur, Rajasthan</h3>
+					<p>Image 2</p>
+				</div>
+			</div>
+			<div class="item">
+				<img src="/gallery/raj3.jpg" class="img-responsive" alt="rajasthan image">
+				<div class="carousel-caption">
+					<h3>Jaipur, Rajasthan</h3>
+					<p>Image 3</p>
+				</div>
+			</div>
+			<div class="item">
+				<img src="/gallery/raj4.jpg" class="img-responsive" alt="rajasthan image">
+				<div class="carousel-caption">
+					<h3>Jaipur, Rajasthan</h3>
+					<p>Image 4</p>
+				</div>
+			</div>
+			<div class="item">
+				<img src="/gallery/raj5.jpg" class="img-responsive" alt="rajasthan image">
+				<div class="carousel-caption">
+					<h3>Jaipur, Rajasthan</h3>
+					<p>Image 5</p>
+				</div>
+			</div>
+			<div class="item active">
+				<img src="/gallery/raj6.jpg" class="img-responsive" alt="rajasthan image">
+				<div class="carousel-caption">
+					<h3>Jaipur, Rajasthan</h3>
+					<p>Image 6</p>
+				</div>
+			</div>
+
+		</div>
+		<a href="#imageSlide11" class="carousel-control left" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left"></span>
+		</a>
+		<a href="#imageSlide11" class="carousel-control right" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right"></span>
+		</a>
+	</div>
+						<!-- <img src="/gallery/raj6.jpg" class="img-responsive" alt="rajasthan image"> -->
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	</div>
+			
+	</div>
+			
+	</div>
+			
+</div>
+
+	
+	
+	
+	
+
+
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/js/bootstrap.min.js"></script>
+	
+</body>
+</html>
